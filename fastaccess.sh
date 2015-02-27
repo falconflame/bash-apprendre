@@ -13,17 +13,31 @@ mplayer /root/Data/my\ music/bloody\ monday\ 2\ ost/*mp3 &
 #Buka browser iceweasel
 iceweasel facebook.com google.com wordpress.com &
 
+#Buka direktori /home
+nautilus ~ &
+
 #Buka e-book shell scriptingnya Machtelt Garrels
-evince "/root/Data/my documents/linux/Bash-Beginners-Guide.pdf" &
+evince "/root/falconflame/ebook/Bash/Bash-Beginners-Guide.pdf" &
 
 #Buka e-book shell scriptingnya Mendel Cooper
-evince "/root/falconflame/materi dilo/advanced bash - Mendel Cooper.pdf" &
+evince "/root/falconflame/ebook/Bash/advanced bash - Mendel Cooper.pdf" &
 
 #Buka e-book awk sed Frederick J. Tan
-evince "/root/falconflame/materi dilo/sedawkbashkey.pdf" &
+evince "/root/falconflame/ebook/Bash/sedawkbashkey.pdf" &
 
 #Buka e-book shell scriptingnya Steve Parker
-evince "/root/falconflame/materi dilo/ShellScripting.pdf" && fg
+evince "/root/falconflame/ebook/Bash/ShellScripting.pdf" &
+
+#Buka e-book apress Beginning Python From Novice To Professional  Magnus Lie Hetland
+evince "/root/falconflame/ebook/python/Apress_Beginning_Python_From_N.pdf" &
+
+#Buka e-book packt Python Testing Beginner's Guide Daniel Arbuckle
+evince "/root/falconflame/ebook/python/Python Testing - Beginner's Guide (2010).pdf" &
+
+#Buka e-book Beginning Python Using Python 2.6 and 3.1 James Payne
+evince "/root/falconflame/ebook/python/Beginning Python Using Python 2.6 and Python 3.1 (2010) (ATTiCA).pdf" && fg
+
+exit 0
 
 #Pemisahan karakter di atas ada yang pakai backslash ( \ ) dan ada yang pakai double quote (" ")
 #Sengaja demikian hanya untuk menunjukkan ada banyak cara dalam scripting
