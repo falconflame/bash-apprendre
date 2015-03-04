@@ -22,6 +22,6 @@ done
 
 exit 0
 
-#Any ideas or comments? Contact me add: flame.axoneme@gmail.com or flame_axoneme@yahoo.fr
+#Any ideas or comments? Contact me at: flame.axoneme@gmail.com or flame_axoneme@yahoo.fr
 #Or you can see me here: http://fajarichwannoor.wordpress.com
 
