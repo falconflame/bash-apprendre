@@ -2,13 +2,14 @@
 
 #We can search and replace specific word in many files on the same directory at the same time
 #without the need of repeating the task
-#Made in two options
+#Made in two options, choose one depend on your condition
 #Tested and created by falconflame a.k.a dr. F
 
 #The path after command "find" can be replace to any specific absolute or relative path
 #You can change .txt to other extension i.e. .doc .rtf .odt .php .html .xls .ppt et cetera
 #Input the specific word you'd like to change in findstring and replacestring 
-find . *.txt -type f -exec sed -i 's/findstring/replacestring/g' {} \;
+find . *.txt -type f -exec sed -i 's/findstring/replacestring/g' {} \; #Dot (.) after find means current path
+echo "The word is successfully replaced!!!"
 
 exit 0
 
@@ -18,6 +19,7 @@ for falcon in *.txt
    do mv $falcon $falcon.tmp
    sed -e 's/findstring/replacestring/g' $falcon.tmp > $falcon
    rm -f $falcon.tmp
+   echo "The word is successfully replaced!!!"
 done
 
 exit 0
