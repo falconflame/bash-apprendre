@@ -2,7 +2,8 @@
 
 #We can search and replace specific word in many files on the same directory at the same time
 #without the need of repeating the task
-#Made in two options, choose one depend on your condition
+#Made in three options, choose one depend on your condition
+#Whichever you choose, don't forget to add # in front of other command method
 #Tested and created by falconflame a.k.a dr. F
 
 #The path after command "find" can be replace to any specific absolute or relative path
@@ -14,13 +15,19 @@ echo "The word is successfully replaced!!!"
 exit 0
 
 #In case you already know the path, you can choose this option below and run it on the specific folder
-#If you prefer so, don't forget to add # comment to the command above
+#If you prefer so, don't forget to add # comment to the command before and after this one
 for falcon in *.txt
    do mv $falcon $falcon.tmp
    sed -e 's/findstring/replacestring/g' $falcon.tmp > $falcon
    rm -f $falcon.tmp
    echo "The word is successfully replaced!!!"
 done
+
+exit 0
+
+#Or you could try this third method below
+find . *.txt -type f | xargs sed -i 's/findstring/replacestring/g'
+echo "The word is successfully replaced!!!"
 
 exit 0
 
