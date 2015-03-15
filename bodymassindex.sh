@@ -13,7 +13,7 @@ echo -n "Enter your height (in Cm): "
 read height
 
 idealweight=$[$height - 110]
-echo "Your ideal weight is $idealweight"
+echo "Your ideal weight is $idealweight Kg"
 sleep 1
 if [ $weight -lt $idealweight ]; then
 	echo "You should eat a bit more fat, carbs or protein. Consult your doctor"
